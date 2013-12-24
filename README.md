@@ -1,4 +1,5 @@
 jquery-owlbox
 =============
 
-Lightbox-like gallery for galleries, based on owlCarousel and Bootstrap 3 modals.
+Lightbox-like gallery, based on owlCarousel and Bootstrap 3 modals.
+Project state is incubating.
