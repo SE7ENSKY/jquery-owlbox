@@ -1,6 +1,6 @@
 ###
 @name jquery-owlbox
-@description Lightbox-like gallery for galleries, based on owlCarousel and Bootstrap 3 modals.
+@description Lightbox-like gallery, based on owlCarousel and Bootstrap 3 modals.
 @version 1.0.0
 @author Se7enSky studio <info@se7ensky.com>
 @dependencies
