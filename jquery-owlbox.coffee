@@ -122,9 +122,21 @@ plugin = ($) ->
 					e.preventDefault()
 					sync1.trigger "owl.goTo", $(@).data("owlItem")
 
+				keysHandler = (e) ->
+					switch e.which
+						when 37 # left
+							sync1.trigger "owl.prev"
+							e.preventDefault()
+						when 39 # right
+							sync1.trigger "owl.next"
+							e.preventDefault()
+
 				$("section.modals").append $popup
 				$popup.modal "show"
-				$popup.on "hidden.bs.modal", -> $popup.remove()
+				$("body").on "keydown", keysHandler
+				$popup.on "hidden.bs.modal", ->
+					$popup.remove()
+					$("body").off "keydown", keysHandler
 
 # UMD 
 if typeof define is 'function' and define.amd then define(['jquery'], plugin) else plugin(jQuery)
