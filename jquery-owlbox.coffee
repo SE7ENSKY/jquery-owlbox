@@ -72,7 +72,6 @@ plugin = ($) ->
 				center = (number) ->
 					sync2visible = sync2.data("owlCarousel").visibleItems
 					return unless sync2visible
-					console.log "center", number
 					num = number
 					found = false
 					for i of sync2visible
